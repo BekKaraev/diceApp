@@ -1,8 +1,6 @@
-import 'dart:developer'as dev;
-
+import 'dart:developer' as dev;
 import 'package:diceapp/constants/colors/app_colors.dart';
 import 'package:flutter/material.dart';
-
 import '../data/repositories/math_repos.dart';
 import '../widgets/app_bar_widget.dart';
 import '../widgets/dice_content_widget.dart';
@@ -24,13 +22,14 @@ class _DicePageState extends State<DicePage> {
   Widget build(BuildContext context) {
     dev.log('build ==> ${_count++}');
     return Scaffold(
-        backgroundColor:Appcolors.scafolde,
-        appBar: const AppBarWidget(),
-        body: DiceContentWidget(
-          onTap: changeDice,
-          leftNumber: _leftNumber,
-          rightNumber: _rightNumber,
-        ));
+      backgroundColor: Appcolors.scafolde,
+      appBar: const AppBarWidget(),
+      body: DiceContentWidget(
+        onTap: changeDice,
+        leftNumber: _leftNumber,
+        rightNumber: _rightNumber,
+      ),
+    );
   }
 
   void changeDice() {
