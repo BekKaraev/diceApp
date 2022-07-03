@@ -1,3 +1,4 @@
+import 'package:diceapp/constants/colors/app_colors.dart';
 import 'package:diceapp/data/getxData/controller/dice_controller.dart';
 import 'package:diceapp/widgets/app_bar_widget.dart';
 import 'package:diceapp/widgets/dice_content_widget.dart';
@@ -10,7 +11,7 @@ class DiceGetXScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffFF5353),
+      backgroundColor:Appcolors.scafolde,
       appBar: const AppBarWidget(),
       body: Obx(() => DiceContentWidget(
             leftNumber: _diceController.leftNumber.value,
